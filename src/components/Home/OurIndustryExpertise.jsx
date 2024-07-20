@@ -12,21 +12,34 @@ import {
   VStack,
   useColorModeValue
 } from "@chakra-ui/react";
-import { CheckIcon } from "@chakra-ui/icons";
+import { 
+  FaBuilding, 
+  FaSchool, 
+  FaBeer, 
+  FaTools, 
+  FaShoppingCart, 
+  FaHeartbeat, 
+  FaLaptopCode, 
+  FaStore, 
+  FaHome, 
+  FaBriefcase, 
+  FaOilCan, 
+  FaHandHoldingHeart 
+} from "react-icons/fa";
 
 const features = [
-  { id: 1, title: "CONSTRUCTION" },
-  { id: 2, title: "EDUCATION" },
-  { id: 3, title: "FOOD & BEVERAGE" },
-  { id: 4, title: "GENERAL SERVICE" },
-  { id: 5, title: "TRADING COMPANIES" },
-  { id: 6, title: "HEALTHCARE" },
-  { id: 7, title: "INFORMATION TECHNOLOGY (IT)" },
-  { id: 8, title: "RETAIL" },
-  { id: 9, title: "REAL ESTATE" },
-  { id: 10, title: "PROFESSIONAL SERVICES" },
-  { id: 11, title: "OIL/GAS" },
-  { id: 12, title: "NOT-FOR-PROFIT ORGANIZATIONS" },
+  { id: 1, title: "CONSTRUCTION", icon: FaBuilding },
+  { id: 2, title: "EDUCATION", icon: FaSchool },
+  { id: 3, title: "FOOD & BEVERAGE", icon: FaBeer },
+  { id: 4, title: "GENERAL SERVICE", icon: FaTools },
+  { id: 5, title: "TRADING COMPANIES", icon: FaShoppingCart },
+  { id: 6, title: "HEALTHCARE", icon: FaHeartbeat },
+  { id: 7, title: "INFORMATION TECHNOLOGY (IT)", icon: FaLaptopCode },
+  { id: 8, title: "RETAIL", icon: FaStore },
+  { id: 9, title: "REAL ESTATE", icon: FaHome },
+  { id: 10, title: "PROFESSIONAL SERVICES", icon: FaBriefcase },
+  { id: 11, title: "OIL/GAS", icon: FaOilCan },
+  { id: 12, title: "NOT-FOR-PROFIT ORGANIZATIONS", icon: FaHandHoldingHeart },
 ];
 
 export default function OurIndustryExpertise() {
@@ -59,7 +72,7 @@ export default function OurIndustryExpertise() {
               boxShadow={"md"}
             >
               <Box color={"green.400"} fontSize={{ base: "lg", md: "xl" }}>
-                <Icon as={CheckIcon} />
+                <Icon as={feature.icon} />
               </Box>
               <VStack align={"start"}>
                 <Text fontWeight={600} fontSize={{ base: "md", md: "lg" }}>
